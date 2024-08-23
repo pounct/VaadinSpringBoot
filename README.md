@@ -26,7 +26,7 @@ En un proyecto de Spring Boot con Vaadin, tendrás una estructura similar a la d
 ## 3. Creación de una Vista en Vaadin
 Aquí tienes un ejemplo simple de una vista en Vaadin dentro de un proyecto de Spring Boot:
 
-```java
+    ```java
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
