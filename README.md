@@ -27,27 +27,27 @@ En un proyecto de Spring Boot con Vaadin, tendrás una estructura similar a la d
 Aquí tienes un ejemplo simple de una vista en Vaadin dentro de un proyecto de Spring Boot:
 
     ```java
-import com.vaadin.flow.component.button.Button;
-import com.vaadin.flow.component.orderedlayout.VerticalLayout;
-import com.vaadin.flow.component.textfield.TextField;
-import com.vaadin.flow.router.Route;
-import org.springframework.beans.factory.annotation.Autowired;
+    import com.vaadin.flow.component.button.Button;
+    import com.vaadin.flow.component.orderedlayout.VerticalLayout;
+    import com.vaadin.flow.component.textfield.TextField;
+    import com.vaadin.flow.router.Route;
+    import org.springframework.beans.factory.annotation.Autowired;
+    
+    @Route("hello")
+    public class HelloView extends VerticalLayout {
 
-@Route("hello")
-public class HelloView extends VerticalLayout {
-
-    public HelloView() {
-        TextField nameField = new TextField("Tu nombre");
-        Button greetButton = new Button("Saludar");
-
-        greetButton.addClickListener(e -> {
-            String name = nameField.getValue();
-            greetButton.setText("Hola, " + name);
-        });
-
-        add(nameField, greetButton);
+        public HelloView() {
+            TextField nameField = new TextField("Tu nombre");
+            Button greetButton = new Button("Saludar");
+    
+            greetButton.addClickListener(e -> {
+                String name = nameField.getValue();
+                greetButton.setText("Hola, " + name);
+            });
+    
+            add(nameField, greetButton);
+        }
     }
-}
 
 
 ## 4. Ventajas de Vaadin con Spring Boot
