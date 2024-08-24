@@ -1,0 +1,5 @@
+MotService.ts
+com/pounct/FullSSpring/entities/Mot.ts
+connect-client.default.ts
+endpoints.ts
+com/pounct/FullSSpring/entities/MotModel.ts

@@ -1,9 +1,7 @@
 package com.pounct.FullSSpring.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.pounct.FullSSpring.converters.MapToStringConverter;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.Size;
 import lombok.*;
 
@@ -17,6 +15,7 @@ public class Mot {
     @Size(min = 1,max = 20)
     private String mot;
     private String esqueleto;
+    @Convert(converter = MapToStringConverter.class)
     private Map<String,String> consonneVoyelle;
 
 }
