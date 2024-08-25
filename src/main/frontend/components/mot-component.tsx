@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
         import { DataGrid } from '@mui/x-data-grid';
         import { MotService } from "../generated/endpoints";
-        import { Mot } from "../generated/com/pounct/FullSSpring/entities/Mot";
+        import Mot from "generated/com/pounct/FullSSpring/entities/Mot";
+
 
         export default function MotComponent() {
-        const [mots, setMots] = useState<Mot[]>([]);
+        const [mots, setMots] = useState<(Mot | undefined)[]>([]);
 
         useEffect(() => {
         MotService.getAllMots().then((resp) => {
