@@ -20,7 +20,10 @@ import React, { useState, useEffect } from 'react';
         return (
 <div>
 <h1>Mot List</h1>
-<DataGrid rows={mots} columns={[{ field: 'id' }, { field: 'mot' }, { field: 'esqueleto' }]} />
+<DataGrid
+        rows={mots.filter((mot): mot is Mot => mot !== undefined)}
+columns={[{ field: 'id' }, { field: 'mot' }, { field: 'esqueleto' }]}
+/>
 </div>
         );
         }

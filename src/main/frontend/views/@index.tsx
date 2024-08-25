@@ -1,11 +1,12 @@
 import React from 'react';
 import "../styles/styles.css";
-        import MotComponent from "../components/mot-component";
+        import MotCRUDComponent from "../components/mot-crud-component";
+
 
         export default function Index() {
         return (
 <div className="p-m">
-    <MotComponent/>
+    <MotCRUDComponent/>
 </div>
         );
         }
