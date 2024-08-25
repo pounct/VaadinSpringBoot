@@ -8,6 +8,7 @@
   "compilerOptions": {
     "sourceMap": true,
     "jsx": "react",
+    "allowUmdGlobalAccess": true,
     "inlineSources": true,
     "module": "esNext",
     "target": "es2020",
@@ -22,7 +23,7 @@
     "noUnusedParameters": false,
     "experimentalDecorators": true,
     "useDefineForClassFields": false,
-    "baseUrl": "src/main/frontend",
+    "baseUrl": "./src/main/frontend",
     "paths": {
       "@vaadin/flow-frontend": ["generated/jar-resources"],
       "@vaadin/flow-frontend/*": ["generated/jar-resources/*"],
