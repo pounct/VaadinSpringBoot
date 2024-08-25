@@ -16,7 +16,7 @@ public class MotService {
         this.motRepository = motRepository;
     }
 
-    public List<Mot> getAllmots(){
+    public List<Mot> getAllMots(){
         return motRepository.findAll();
     }
 

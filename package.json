@@ -3,6 +3,10 @@
   "license": "UNLICENSED",
   "type": "module",
   "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/material": "^5.16.7",
+    "@mui/x-data-grid": "^7.14.0",
     "@polymer/polymer": "3.5.1",
     "@vaadin/bundles": "24.4.5",
     "@vaadin/common-frontend": "0.0.19",
@@ -115,7 +119,7 @@
       "workbox-core": "7.1.0",
       "workbox-precaching": "7.1.0"
     },
-    "hash": "dc17d6d7236f539354b71c1ced43ccee1283e8bc60204247ea3ade32f78c3af4"
+    "hash": "cde8ea4b5823a8e5604d2ec876ddddca6095c1f70c28b9b312c1728fbb43934c"
   },
   "overrides": {
     "@vaadin/bundles": "$@vaadin/bundles",
@@ -142,6 +146,10 @@
     "date-fns": "$date-fns",
     "@vaadin/vaadin-themable-mixin": "$@vaadin/vaadin-themable-mixin",
     "@vaadin/vaadin-lumo-styles": "$@vaadin/vaadin-lumo-styles",
-    "@vaadin/vaadin-material-styles": "$@vaadin/vaadin-material-styles"
+    "@vaadin/vaadin-material-styles": "$@vaadin/vaadin-material-styles",
+    "@emotion/react": "$@emotion/react",
+    "@emotion/styled": "$@emotion/styled",
+    "@mui/material": "$@mui/material",
+    "@mui/x-data-grid": "$@mui/x-data-grid"
   }
 }
