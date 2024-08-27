@@ -3,6 +3,8 @@ package com.pounct.FullSSpring.services;
 import com.vaadin.flow.server.auth.AnonymousAllowed;
 import com.vaadin.hilla.BrowserCallable;
 import org.springframework.ai.chat.client.ChatClient;
+import reactor.core.publisher.Flux;
+
 @BrowserCallable
 @AnonymousAllowed
 public class LLMChatService {
@@ -11,9 +13,9 @@ public class LLMChatService {
     public LLMChatService(ChatClient.Builder chatClient) {
         this.chatClient = chatClient.build();
     }
-    public String chat(String question){
+    public Flux<String> chat(String question){
         return chatClient.prompt()
                 .user(question)
-                .call().content();
+                .stream().content();
     }
 }

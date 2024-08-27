@@ -1,4 +1,4 @@
-import { EndpointRequestInit as EndpointRequestInit_1 } from "@vaadin/hilla-frontend";
+import { Subscription as Subscription_1 } from "@vaadin/hilla-frontend";
 import client_1 from "./connect-client.default.js";
-async function chat_1(question: string | undefined, init?: EndpointRequestInit_1): Promise<string | undefined> { return client_1.call("LLMChatService", "chat", { question }, init); }
+function chat_1(question: string | undefined): Subscription_1<string | undefined> { return client_1.subscribe("LLMChatService", "chat", { question }); }
 export { chat_1 as chat };

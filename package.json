@@ -31,6 +31,7 @@
     "lit": "3.1.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-markdown": "^9.0.1",
     "react-router-dom": "6.23.1"
   },
   "devDependencies": {
@@ -119,7 +120,7 @@
       "workbox-core": "7.1.0",
       "workbox-precaching": "7.1.0"
     },
-    "hash": "8308145ef97956600b4c187abe028cb334c61d34e6882ea33554cae73e37038e"
+    "hash": "4f71a6ebe8119d6183d3a91004937f228891dc50d2b8d7ddb3f0eec29b4681ea"
   },
   "overrides": {
     "@vaadin/bundles": "$@vaadin/bundles",
@@ -150,6 +151,7 @@
     "@emotion/react": "$@emotion/react",
     "@emotion/styled": "$@emotion/styled",
     "@mui/material": "$@mui/material",
-    "@mui/x-data-grid": "$@mui/x-data-grid"
+    "@mui/x-data-grid": "$@mui/x-data-grid",
+    "react-markdown": "$react-markdown"
   }
 }
