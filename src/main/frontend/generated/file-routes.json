@@ -3,5 +3,10 @@
     "route": "",
     "params": {},
     "title": "Index"
+  },
+  {
+    "route": "llm-chat",
+    "params": {},
+    "title": "Llm Chat"
   }
 ]
